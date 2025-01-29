@@ -1,0 +1,6 @@
+# VSCode stuff
+*.code-workspace
+.vscode/
+
+# DS_Store
+.DS_Store
