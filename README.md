@@ -5,6 +5,7 @@ A collection of AI model pipelines for OpenWebUI, including a combined Perplexit
 ## Features
 
 - **Combined Sonar-Sonnet Pipeline**: Integrates Perplexity's Sonar Small model for web search with Claude 3.5 Sonnet for comprehensive analysis
+- **OpenRouter Version**: Alternative implementation using OpenRouter API for both models
 - **Conversation-Aware**: Maintains context across multiple interactions for more coherent responses
 - **Citation Support**: Automatically includes references to source materials
 - **Flexible Architecture**: Easy to extend with additional pipelines
@@ -44,6 +45,17 @@ This pipeline combines Perplexity's search capabilities with Anthropic's analysi
 - requests
 - sseclient-py
 - pydantic
+
+## API Keys
+
+The pipelines support two different configurations:
+
+### Direct API Access
+- `PERPLEXITY_API_KEY`: For direct access to Perplexity API
+- `ANTHROPIC_API_KEY`: For direct access to Anthropic API
+
+### OpenRouter Access
+- `OPENROUTER_API_KEY`: Single API key for accessing both Perplexity and Anthropic models through OpenRouter
 
 ## License
 
