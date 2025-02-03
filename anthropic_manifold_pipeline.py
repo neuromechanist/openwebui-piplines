@@ -143,8 +143,8 @@ class Pipeline:
             payload = {
                 "model": model_id,
                 "messages": processed_messages,
-                "max_tokens": body.get("max_tokens", 4096),
-                "temperature": body.get("temperature", 0.8),
+                "max_tokens": body.get("max_tokens", 32768),
+                "temperature": body.get("temperature", 0.6),
                 "top_k": body.get("top_k", 40),
                 "top_p": body.get("top_p", 0.9),
                 "stop_sequences": body.get("stop", []),
